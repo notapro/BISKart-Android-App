@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="30dp"
+
+
+  >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="\nDelivery Details\n"
+        android:textColor="@android:color/black"
+        android:background="@drawable/custom_box_view"
+        android:textSize="25dp"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/custom_box_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       >
+
+    <TextView
+        android:id="@+id/textDeliveryName"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="\nSai Bharadwaj"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/textDeliveryAddress"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="Room No F-75, Hostel Block 3, Vnit, Nagpur, Maharashtra"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:id="@+id/textDeliveryEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saibharadwajk@gmail.com"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/textDeliveryContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7387954773\n"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Address"
+            android:textColor="@android:color/white"
+            android:id="@+id/buttonChangeAddress"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">bis proto</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="user_details" translatable="false">User Details:-</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_home" translatable="false">Home</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="title_activity_payment" translatable="false">Payment</string>
+    <string name="title_activity_cart" translatable="false">Cart</string>
+    <string name="title_activity_delivery_details" translatable="false">DeliveryDetails</string>
+    <string name="title_activity_final" translatable="false">FInal</string>
+    <string name="title_activity_end_app" translatable="false">EndApp</string>
+    <string name="title_activity_product_page" translatable="false">Product Page</string>
+    
+    <string-array name="Payment_Options" translatable="false">
+        <item> Debit Card </item>
+        <item> Credit Card </item>
+        <item> Net Banking </item>
+        <item> Cash On Delivery </item>
+
+    </string-array>
+
+    <string-array name="Months" translatable="false">
+        <item> 01</item>
+        <item> 02 </item>
+        <item> 03 </item>
+        <item> 04 </item>
+        <item> 05 </item>
+        <item> 06 </item>
+        <item> 07 </item>
+        <item> 08 </item>
+        <item> 09 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+
+    </string-array>
+
+    <string-array name="Years" translatable="false">
+        <item> 2015</item>
+        <item> 2016 </item>
+        <item> 2017 </item>
+        <item> 2018 </item>
+        <item> 2019 </item>
+        <item> 2020</item>
+
+    </string-array>
+    <string name="title_activity_sign_up_page">Sign Up</string>
+
+</resources>

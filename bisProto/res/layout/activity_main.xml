@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+ <!--   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:id="@+id/LoginEmailText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" /> -->
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/LoginEmailID"
+        android:hint="Enter your Email-ID"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"/>
+        <!--android:layout_alignTop="@+id/LoginEmailText"
+        android:layout_toRightOf="@+id/LoginEmailText" -->
+
+
+
+  <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/PasswordText"
+        android:layout_below="@+id/LoginEmailText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" /> -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/LoginPassword"
+        android:hint="Enter your password"
+        android:layout_below="@id/LoginEmailID"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        />
+     <!--   android:layout_alignTop="@+id/PasswordText"
+        android:layout_toRightOf="@+id/PasswordText"
+          -->
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:id="@+id/loginShowPasswordCheckBox"
+            android:layout_below="@+id/LoginPassword"
+            android:layout_alignLeft="@+id/LoginPassword"
+            android:layout_alignStart="@+id/LoginPassword"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+     <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="100">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/LoginSubmit"
+        android:layout_below="@+id/loginShowPasswordCheckBox"
+        android:layout_alignTop="@+id/loginSignUp"
+        android:background="@drawable/button"
+        android:layout_weight="20"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/loginSignUp"
+            android:layout_below="@+id/loginShowPasswordCheckBox"
+            android:background="@drawable/button"
+            android:layout_weight="20"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:id="@+id/loginError"
+        android:layout_below="@+id/LoginSubmit"
+         />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

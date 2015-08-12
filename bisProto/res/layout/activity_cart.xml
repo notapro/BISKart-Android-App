@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE5DE"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bis.kart.biskart.Cart" >
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="CheckOut" />
+
+    <Button
+        android:id="@+id/continueShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Continue Shopping" />
+    
+    <TextView 
+        android:id="@+id/mycarttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="My Cart"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/cartlistView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutBtn"
+        android:layout_below="@id/mycarttext"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:fadeScrollbars="false"
+        android:paddingRight="20dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="10dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/trackxml"
+        android:scrollbarTrackVertical="@drawable/scrollbarxml"
+        android:scrollbars="vertical" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/carttextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="The cart is empty"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
